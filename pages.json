@@ -1,0 +1,133 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"leftWindow": {
+		"path": "windows/left-window.vue",
+		"style": {
+			"width": "350px"
+		}
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "Login"
+			}
+		}, {
+			"path": "pages/exam/nowExam",
+			"style": {
+				"navigationBarTitleText": "Today's data"
+			}
+		}, {
+			"path": "pages/tj/tj",
+			"style": {
+				"navigationBarTitleText": "Statistics"
+			}
+		}, {
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "My"
+			}
+		}, {
+			"path": "pages/message/msg",
+			"style": {
+				"navigationBarTitleText": "Message"
+			}
+		}, {
+			"path": "pages/exam/list",
+			"style": {
+				"navigationBarTitleText": "Historical data"
+			}
+		}, {
+			"path": "pages/message/chat",
+			"style": {
+				"navigationBarTitleText": "Chat"
+			}
+		}, {
+			"path": "pages/my/myInfo",
+			"style": {
+				"navigationBarTitleText": "My Information"
+			}
+		}, {
+			"path": "pages/index/register",
+			"style": {
+				"navigationBarTitleText": "Register"
+			}
+		},
+		{
+			"path": "pages/index/myTabbar",
+			"style": {
+				"navigationBarTitleText": "myTabbar"
+			}
+		},
+		{
+			"path": "pages/index/patient",
+			"style": {
+				"navigationBarTitleText": "Patient List"
+			}
+		},
+		{
+			"path": "pages/index/doctor",
+			"style": {
+				"navigationBarTitleText": "Doctor List"
+			}
+		},
+
+		{
+			"path": "pages/my/12312",
+			"style": {
+				"navigationBarTitleText": "Doctor List"
+			}
+		}
+
+	],
+	//全局窗口外观
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+
+	},
+	"tabBar": {
+		"list": [{
+				"text": "Today's data",
+				"pagePath": "pages/exam/nowExam",
+				"iconPath": "static/template.png",
+				"selectedIconPath": "static/templateHL.png"
+			},
+			{
+				"text": "Statistics",
+				"pagePath": "pages/tj/tj",
+				"iconPath": "static/extui.png",
+				"selectedIconPath": "static/extuiHL.png"
+			},
+			{
+				"text": "Message",
+				"pagePath": "pages/message/msg",
+				"iconPath": "static/component.png",
+				"selectedIconPath": "static/componentHL.png"
+			},
+			{
+				"text": "My",
+				"pagePath": "pages/my/my",
+				"iconPath": "static/component.png",
+				"selectedIconPath": "static/componentHL.png"
+			},
+			{
+				"text": "Patinet",
+				"pagePath": "pages/index/patient",
+				"iconPath": "static/component.png",
+				"selectedIconPath": "static/componentHL.png"
+			},
+			{
+				"text": "Doctor",
+				"pagePath": "pages/index/doctor",
+				"iconPath": "static/component.png",
+				"selectedIconPath": "static/componentHL.png"
+			}
+		]
+	}
+}
